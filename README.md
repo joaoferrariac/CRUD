@@ -1,5 +1,5 @@
 
-# Avaliação Sprint 1 - Programa de Bolsas Compass UOL / AWS - turma julho-a/2024
+# P3 - Integracao e Entrega Continua
 
 ## Descrição
 
@@ -72,8 +72,3 @@ A estrutura do projeto está organizada da seguinte forma:
 
 ![cap5](https://github.com/user-attachments/assets/b5b7ee40-6bba-45b2-bf26-add8df3f59e7)
 
-
-## 5. Dificuldades no desenvolvimento
-
-- Fazer o uso do LocalStorage como persistência de dasdos, pois, foi a primeira vez que fiz uso da mesma.
-- Aplicar o padrão Factory Method na Lógica do sistema.
