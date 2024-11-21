@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login e Registro</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="div-cadastro" id="login-container">
+        <div class="div-form">
+            <form class="form">
+                <h2>Login</h2>
+                <input type="text" placeholder="Usuário" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+                <div class="toggle-link">
+                    <a href="#" onclick="toggleForms()">Não tem uma conta? Registre-se</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="div-cadastro" id="register-container" style="display: none;">
+        <div class="div-form">
+            <form class="form">
+                <h2>Registro</h2>
+                <input type="text" placeholder="Usuário" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Registrar</button>
+                <div class="toggle-link">
+                    <a href="#" onclick="toggleForms()">Já tem uma conta? Faça login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script>
+        function toggleForms() {
+            var loginContainer = document.getElementById('login-container');
+            var registerContainer = document.getElementById('register-container');
+            if (loginContainer.style.display === 'none') {
+                loginContainer.style.display = 'block';
+                registerContainer.style.display = 'none';
+            } else {
+                loginContainer.style.display = 'none';
+                registerContainer.style.display = 'block';
+            }
+        }
+    </script>
+    <script src="../js/login.js"></script>
+</body>
+</html>
